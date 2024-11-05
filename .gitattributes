@@ -5,3 +5,4 @@ track filter=lfs diff=lfs merge=lfs -text
 DiscriminatorEpoch_160.keras filter=lfs diff=lfs merge=lfs -text
 MobilenetV2_ModelA.keras filter=lfs diff=lfs merge=lfs -text
 MobilenetV2_ModelB.keras filter=lfs diff=lfs merge=lfs -text
+ECGR8119_Midterm_VGG_SRGAN.ipynb filter=lfs diff=lfs merge=lfs -text
