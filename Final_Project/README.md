@@ -1,4 +1,5 @@
-# ECGR-8119-Applied-AI Final Project --> Leveraging Predictive Models for Workload Execution Prediction and Efficient Resource Allocation
+# ECGR-8119-Applied-AI Final Project 
+# Leveraging Predictive Models for Workload Execution Prediction and Efficient Resource Allocation
 
 This project explores the application of deep learning techniques to improve image classification accuracy through image resolution enhancement and data augmentation. In Part A, a baseline is established by training a MobileNetV2 model on a dataset of cats and dogs, where each image is downscaled to 128x128 pixels. This initial phase allowed to evaluate the model’s performance on lower-resolution images, setting a standard for comparison.
 
