@@ -29,11 +29,14 @@ Models Used:
 2. Run initial cells to preprocess, normalize and visualize the processed data. Once completed, save the preprocessed PANDAS DATAFRAME for easier access.
 3. Train the preprocessed data on Model 1 - Random Forest. Print and Plot the results.
 4. Next, train the same data on Decision Tree. Print and Plot the results.
-5. Finally, train the data on Neural Network. Plot the results. 
-Output: Trained models (Random Forest, Decision Tree, and Neural Network)
+5. Finally, train the data on Neural Network. Plot the results.
+6. Output: Trained models (Random Forest, Decision Tree, and Neural Network)
 
 **Step 3: Run Part 2 Jupyter Notebook**
-1. 
+1. Open ECGR8119_FinalProject_Part2.ipynb in Jupyter Notebook.
+2. Load the previously trained model and import the preprocessed dataframe required for the optimization process.
+3. Use the resource request metrics as baseline metrics and run the optimization framework on the loaded data. Print and review the optimized results.
+4. Plot the results of the first 5 tasks to analyze the optimization performance visually.
 
 **valuation and Metrics**
 Each model notebook includes code for evaluating performance using metrics such as Mean Absolute Error and R-squared. See each notebook for detailed instructions on generating these metrics.
