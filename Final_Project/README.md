@@ -1,27 +1,23 @@
 # ECGR-8119-Applied-AI Final Project 
 # Leveraging Predictive Models for Workload Execution Prediction and Efficient Resource Allocation
 
-This project explores the application of deep learning techniques to improve image classification accuracy through image resolution enhancement and data augmentation. In Part A, a baseline is established by training a MobileNetV2 model on a dataset of cats and dogs, where each image is downscaled to 128x128 pixels. This initial phase allowed to evaluate the model’s performance on lower-resolution images, setting a standard for comparison.
-
-In Part B, super-resolution techniques were introduced to augment the dataset. A Super-Resolution Generative Adversarial Network (SRGAN) was trained on 32x32 images for 160 epochs to generate higher-quality, 128x128 images. Once trained, the SRGAN model was used to generate approximately 2000 super-resolved images, which were then added to the original cats and dogs dataset. The expanded dataset, containing both original and super-resolved images, was then used to re-train the MobileNetV2 model.
-
-By comparing the performance metrics of the MobileNetV2 model trained on the original dataset to the model trained on the enhanced dataset, the aim was to assess the impact of super-resolution and data augmentation on classification accuracy.
-
-This project, thus investigated whether super-resolution can improve model performance on low-resolution image datasets, with implications for AI applications in resource-constrained environments where high-resolution data may be scarce.
+This project focuses on predicting task execution time in Google cluster workloads using machine learning models and optimizing resource allocations (CPU and memory) to ensure efficient usage. The workflow includes data preprocessing, model training, and implementing an optimization framework leveraging predictive insights for workload management.
 
 **Repository File Structure & Contents**
 
-1. ECGR8119_Midterm_ModelA.ipynb - A Jupyter Notebook used to train Model A and print the Results
-2. ECGR8119_Midterm_SRGAN_VGG.ipynb - A Jupyter Notebook used to train SRGAN Model on downscaled 32x32 cats and dogs images (Since, the File size was around 62 MB, the File was pushed to Github using Git Large File Storage (LFS), and its contents may not be displayed in Github)
-3. ECGR8119_Midterm_ModelB.ipynb - A Jupyter Notebook used to train Model B and print the Results
+1. ECGR8119_FinalProject_Part1.ipynb - A Jupyter Notebook used to train three Models - Random Forest, Decision Tree, and Neural Network. The notebook contains Training Results and Plots. 
+2. ECGR8119_FinalProject_Part2.ipynb - A Jupyter Notebook used to implement the Optimization Framework and plot the results.
 
 **Project Overview**
 
-Dataset --> Cats and Dogs Dataset from Kaggle.
+Dataset --> Google Cluster Trace Dataset from Kaggle.
 Models Used:
-1. Model A: Baseline classification model.
-2. ECGR8119_Midterm_SRGAN_VGG --> An SRGAN (Super-Resolution GAN) model to enhance image resolution, followed by a VGG-based model for feature extraction.
-3. Model B: A refined classifier leveraging enhanced images from the SRGAN model for improved accuracy.
+1. Model 1: Random Forest - Powerful ensemble learning model that combines multiple decision trees to improve prediction accuracy. The model was trained on 80% of the data, using 100 estimators to reduce overfitting and enhance generalization.
+
+2. Model 2: Decision Tree - Simple yet effective model used for classification and regression. The decision tree model was trained to predict the execution time of a particular task, and its performance was evaluated by tuning parameters such as max depth.
+
+3. Neural Network - A multi-layer perceptron (MLP) neural network was implemented and trained for 10, 25, 50 and 100 epochs to assess performance and convergence. The network architecture included an input layer, 2 hidden layers, and an output layer for regression.
+
 
 **Steps to Replicate the Project:** 
 
