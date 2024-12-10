@@ -22,31 +22,22 @@ Models Used:
 **Steps to Replicate the Project:** 
 
 **Step 1: Download Dataset**
-1. Download the Cats and Dogs Dataset from Kaggle and Unzip the dataset. (https://www.kaggle.com/c/dogs-vs-cats/data)
+1. Download the Google Cluster Trace Dataset from Kaggle and Unzip the dataset. (https://www.kaggle.com/datasets/derrickmwiti/google-2019-cluster-sample)
 
-**Step 2: Run Model A Jupyter Notebook**
-1. Open ModelA.ipynb in Jupyter Notebook.
-2. Run all cells to train the initial classification model on the dataset.
-Output: This model provides a baseline classification model and saves initial predictions for further processing.
+**Step 2: Run Part 1 Jupyter Notebook**
+1. Open ECGR8119_FinalProject_Part1.ipynb in Jupyter Notebook.
+2. Run initial cells to preprocess, normalize and visualize the processed data. Once completed, save the preprocessed PANDAS DATAFRAME for easier access.
+3. Train the preprocessed data on Model 1 - Random Forest. Print and Plot the results.
+4. Next, train the same data on Decision Tree. Print and Plot the results.
+5. Finally, train the data on Neural Network. Plot the results. 
+Output: Trained models (Random Forest, Decision Tree, and Neural Network)
 
-**Step 3: Run ECGR8119_Midterm_SRGAN_VGG Notebook**
-1. Open ECGR8119_Midterm_SRGAN_VGG.ipynb in Jupyter Notebook.
-This notebook uses an SRGAN (Super-Resolution GAN) to enhance the resolution of images in the dataset.
-2. Run all cells in this notebook to:
-3. Train the SRGAN model.
-4. Apply the SRGAN model to enhance image resolution.
-5. Use a VGG-based network for feature extraction.
-Output: Enhanced images and extracted features, which will serve as input to Model B for improved classification.
-
-**Step 4: Run Model B Jupyter Notebook**
-1. Open ModelB.ipynb in Jupyter Notebook.
-2. Run all cells to train the final classification model using the enhanced dataset and extracted features from the SRGAN model.
-Output: Final classification model with improved performance metrics.
+**Step 3: Run Part 2 Jupyter Notebook**
+1. 
 
 **valuation and Metrics**
-Each model notebook includes code for evaluating performance using metrics such as Precision, Recall, F1 Score, and AUC. See each notebook for detailed instructions on generating these metrics.
+Each model notebook includes code for evaluating performance using metrics such as Mean Absolute Error and R-squared. See each notebook for detailed instructions on generating these metrics.
 
 **Additional Notes**
-1. Ensure each notebook is run in sequence, as Model B depends on outputs from the previous steps.
-2. Use TensorBoard or other visualization tools to monitor training performance across notebooks.
+1. Ensure each notebook is run in sequence, as Part 2 depends on outputs from the previous steps.
 
